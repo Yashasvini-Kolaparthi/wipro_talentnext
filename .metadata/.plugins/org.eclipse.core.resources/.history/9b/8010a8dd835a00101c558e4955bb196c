@@ -1,0 +1,22 @@
+package java_fundamental;
+
+public class Question01 {
+
+    public static void main(String[] args) {
+        // Check if exactly two command-line arguments are provided
+        if (args.length != 2) {
+            System.out.println("Error: Please provide exactly two command-line arguments.");
+            System.out.println("Usage: java CommandLineProcessor <String1> <String2>");
+            return; // Exit the program
+        }
+
+        // Retrieve the two command-line arguments
+        String arg1 = args[0];
+        String arg2 = args[1];
+
+        // Generate the output in the required format
+        // Example 1: Wipro and Bangalore -> Wipro Technologies Bangalore
+        // Example 2: ABC and Mumbai -> ABC Technologies Mumbai
+        System.out.println(arg1 + " Technologies " + arg2);
+    }
+}

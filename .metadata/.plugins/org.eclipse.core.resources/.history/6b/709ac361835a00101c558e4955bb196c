@@ -1,0 +1,19 @@
+package java_fundamental;
+
+public class Question01 {
+
+    public static void main(String[] args) {
+        
+        if (args.length != 2) {
+            System.out.println("Error: Please provide exactly two command-line arguments.");
+            System.out.println("Usage: java CommandLineProcessor <String1> <String2>");
+            return; 
+        }
+
+        String arg1 = args[0];
+        String arg2 = args[1];
+
+       
+        System.out.println(arg1 + " Technologies " + arg2);
+    }
+}

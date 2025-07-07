@@ -1,0 +1,17 @@
+package java_fundamental;
+
+public class Question01 {
+    public static void main(String[] args) {
+        // Check if exactly two arguments are passed
+        if (args.length == 2) {
+            String company = args[0];
+            String city = args[1];
+            
+            // Output in the required format
+            System.out.println(company + " Technologies " + city);
+        } else {
+            // If arguments are missing, show error
+            System.out.println("Please provide exactly two command line arguments: <Company> <City>");
+        }
+    }
+}
